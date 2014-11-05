@@ -1,7 +1,7 @@
 eoa-cookiecutter
 ================
 
-A template for starting an [Edition Open Access](http://www.edition-open-access.de/) Repository to begin typesetting a book.
+A template for starting an [Edition Open Access](http://www.edition-open-access.de/) repository to begin typesetting a book.
 
 ### Requirements
 
