@@ -1,7 +1,14 @@
 eoa-cookiecutter
 ================
 
-A template for starting an Edition Open Access Repository to begin typesetting a book.
+A template for starting an [Edition Open Access](http://www.edition-open-access.de/) Repository to begin typesetting a book.
+
+### Requirements
+
+* [cookiecutter](https://github.com/audreyr/cookiecutter)
+* XeLaTeX (from MacTex - mac or TexLive - windows)
+
+### Instructions
 
     $ pip install cookiecutter
     $ cookiecutter https://github.com/ouinformatics/eoa-cookiecutter/
