@@ -1,0 +1,158 @@
+
+% This is a regular paragraph. It includes
+% russian, chinese, hebrew and greek characters.
+% Furthermore it includes an apple image as a
+% character and small equation. The word gubergren
+% appears in italics and some characters are
+% superscript or subscript. And finally there is a
+% simple footnote which includes an URL
+Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut
+labore et dolore magna aliquyam erat, sed diam
+voluptua. \EOAineq{2^2 = 4} At vero eos et accusam
+et justo duo dolores et ea rebum.
+\EOArussian{Максим Горький} Stet clita kasd
+gubergren, no sea takimata sanctus est Lorem ipsum
+dolor sit amet. \EOAchinese{孔夫子} Lorem ipsum dolor
+sit amet, consetetur sadipscing elitr,
+\EOAinline{inline/A.jpg} sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam
+erat, sed diam voluptua. \EOAgreek{Ἀριστοτέλης} At
+\EOAup{vero} eos et \EOAdown{accusam} et justo duo
+dolores et ea rebum. Stet \EOAhebrew{שלום} clita kasd
+\EOAemph{gubergren}, no sea takimata sanctus est
+Lorem ipsum dolor sit amet.\EOAfn{This is a
+footnote, see
+\EOAurl{http://www.edition-open-access.de}}
+
+% \EOAsection starts a new and numbered section
+\EOAsection{This is a section}
+
+% \EOAlabel sets a label being used for cross
+% references
+\EOAlabel{sec1}
+
+Duis autem vel eum iriure dolor in hendrerit in
+vulputate velit esse molestie consequat, vel illum
+dolore eu feugiat nulla facilisis at vero eros et
+accumsan et iusto odio dignissim qui blandit
+praesent luptatum zzril delenit augue duis dolore
+te feugait nulla facilisi.
+
+% This is a numbered list containing three items
+\begin{EOAlist}
+    \item This is the first entry.
+    \item This is the second entry.
+    \item This is the third entry
+\end{EOAlist}
+
+% \EOAsubsection starts a new and numbered section
+\EOAsubsection{This is a subsection}
+
+Ut wisi enim ad minim veniam, quis nostrud exerci
+tation ullamcorper suscipit lobortis nisl ut
+aliquip ex ea commodo consequat.
+
+% The following lines of code produce a table
+% consisting of 4 columns and 3 rows
+
+\begin{EOAtable}{L{2.3cm}L{2.3cm}L{2.3cm}L{2.3cm}}
+{This is a table}{sec3:table1}{H}
+\EOAtablehead{Heading 1 & Heading 2 & Heading 3
+& Heading 4}
+Here & you & may & find \\
+some & data & spread & over\\
+the & table & in & cells\\
+\end{EOAtable}
+
+% For a transcription and translation
+% EOAtranscripted may be used
+% this command always starts on a left page
+\begin{EOAtranscripted}{Libro Primo, 6v}{First Book, 6v}
+Delirant isti romani!
+\EOAnewpage
+Die spinnen, die Römer!
+\end{EOAtranscripted}
+
+
+% This is a not numbered list containing three
+% items
+\begin{EOAitems}
+    \item This is the first entry.
+    \item This is the second entry.
+    \item This is the third entry
+\end{EOAitems}
+
+\EOAsection{This is a second section}
+
+Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut
+labore et dolore magna aliquyam erat, sed diam
+voluptua. At vero eos et accusam et justo duo
+dolores et ea rebum.
+
+% \EOAfigure takes five parameters to include an
+% image
+\EOAfigure{images/1.jpg}{An image with a
+caption}{sec2:image1}{66}{H}
+
+% \EOAlsfigure takes three parameters
+% the figure covers the whole page
+\EOAlsfigure{images/1.jpg}{That's a caption for
+the figure.}{sec2:image2}
+
+% This paragraph illustrates various references.
+% It includes a reference to the image, two
+% entries for the index, one reference to a
+% facsimile and one reference to a section
+Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut
+labore et dolore magna aliquyam erat, sed diam
+voluptua. (see image \EOAref{sec2:image1}). At
+vero eos et accusam et justo duo dolores et ea
+rebum. (see section \EOAref{sec1}) Stet clita kasd
+gubergren, no sea \EOAindex{Science}
+\EOAindex{Konfuzius@\EOAchinese{孔夫子}} takimata
+sanctus est Lorem ipsum dolor sit amet. (see
+facsimile on page \EOApageref{Facsimile1}) Lorem
+ipsum dolor sit amet, consetetur sadipscing elitr,
+sed diam nonumy eirmod tempor invidunt ut labore
+et dolore magna aliquyam erat, sed diam voluptua.
+At vero eos et accusam et justo duo dolores et ea
+rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet.
+
+% A simple equation
+\begin{EOAequation}{LabelOfThisEquation}
+6 + 6 = 12
+\end{EOAequation}
+
+%This paragraph consists of a longer quote, a
+%footnote and a bibliographical reference
+\begin{EOAquote}
+Stet clita kasd gubergren, no sea
+takimata sanctus est Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut
+labore et dolore magna aliquyam erat, sed diam
+voluptua. At vero eos et accusam et justo duo
+dolores et ea
+rebum.\EOAfn{\EOAciteauthoryear[320-322]{Benedetti_1585}}
+\end{EOAquote}
+
+% An array of equations
+\begin{EOAequationarray}{LabelOfArray}
+    1 + 1 = 2\\
+    2 + 2 = 4\\
+    4 + 4 = 8
+\end{EOAequationarray}
+
+% \EOAletterhead to introduce a letter
+\EOAletterhead{to Harald Paslewski, 01/22/1927}{Some
+Archive}{handwritten}{3}
+
+At vero eos et accusam et justo duo dolores et ea
+rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet.
+
+

@@ -1,0 +1,44 @@
+\include{pre_eoa}
+\EOAbibliographytype{monograph}
+\EOAbibliographydatabase{biblio}
+\EOAseries{Proceedings}
+\begin{document}
+
+% Comments can be inserted with % at the beginning
+% of the line
+
+% The command \EOAtoc puts the table of contents
+% here
+\EOAtoc
+
+% \EOApart starts a new part 
+\EOApart{Part 1: This is the first part}
+
+\EOAchapter{The first chapter (H. Paslewski)}{This
+is the title of the first chapter\EOAauthor{Harald
+Paslewski}}
+\input{examplechapter.tex}
+
+
+% \EOAchapternonumber starts a new chapter without
+% numbering.
+\EOAchapternonumber{Bibliography}{Bibliography}
+
+% \EOAprintbibliography prints out the references
+% which are being used
+\EOAprintbibliography
+
+% This starts a new part for Facsimiles. Header
+% and borders are different
+\EOAfacsimilepart{Facsimile Reproduction}
+
+% This includes the file 0153.jpg in the folder
+% facsim and sets the label Facsimile1 for any
+% reference
+\EOAfacsimile{facsim/0153.jpg}{Facsimile1}{Header of the Facsimile page}
+
+% This simple commands prints out the index
+\EOAprintindex
+
+
+\end{document}
